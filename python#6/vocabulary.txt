@@ -1,10 +1,20 @@
-고양이: cat
-사과: apple
-교회: church
-절: temple
-지갑: wallet
-책가방: bag
-비누: soap
-자전거: bicycle
-일본인: a Japanese
-한국인: a Korean
+dog: 강아지
+affiliated: 소속된
+table: 책상
+chair: 의자
+laptop: 노트북
+coffee: 커피
+pen: 펜
+pencil: 연필
+notebook: 공책
+artist: 아티스트
+dog: 강아지
+affiliated: 소속된
+table: 책상
+chair: 의자
+laptop: 노트북
+coffee: 커피
+pen: 펜
+pencil: 연필
+notebook: 공책
+artist: 아티스트
