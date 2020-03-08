@@ -248,7 +248,7 @@ def main(winning_numbers, tries, total_prize, total_cost):
     out_file.close()
 
 # define constants
-WINNING_NUMBERS = lottery.draw_winning_numbers()
+WINNING_NUMBERS = lottery.draw_winning_numbers(1)
 NUM_TRIES = 100
 
 # define variables
@@ -257,7 +257,7 @@ total_prize = 0
 total_cost = 0
 
 for i in range(NUM_TRIES):
-    attempt = lottery.generate_numbers()
+    attempt = lottery.generate_numbers(6)
     prize = lottery.check(attempt, WINNING_NUMBERS)
     tries.append((attempt, prize))
 
@@ -266,5 +266,3 @@ for i in range(NUM_TRIES):
 
 main(WINNING_NUMBERS, sorted(tries, key=lambda x: -x[1]), total_prize,
     total_cost)
-
-\\\
