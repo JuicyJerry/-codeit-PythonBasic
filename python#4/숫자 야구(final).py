@@ -24,7 +24,7 @@ numbers_box = []
 count = 0
 new_count = 0
 
-while numbers_box != computer_values:
+while numbers_box != computer_values: #33
     count = 0
     numbers_box = []
     while len(numbers_box) < 3:
@@ -38,22 +38,29 @@ while numbers_box != computer_values:
         while user_values < 0 or user_values > 9:
            user_values = int(input("%d번째 수를 입력하세요: " % (int(len(numbers_box)) + 1)))
         numbers_box.append(user_values)
+
         print("User Values는 %s 입니다." % numbers_box)
 
     # strike와 ball 구분
     i = 0
     strike = 0
     ball = 0
+    # while strike < 3: # 3번째에서 list range out error가 발생
     while i < len(numbers_box):
         if numbers_box[i] == computer_values[i]:
             strike = strike + 1
+
             print("%sstrike "% i)
+
         elif numbers_box[i] in computer_values:
             ball = ball + 1
             print("%sball" % i)
         i += 1
+
     print("%dS, %dB" % (strike, ball))
+
     new_count = new_count + 1
+
     if strike == 3:
-        print("축하합니다. %s번만에 세 숫자의 값과 위치를 모두 맞추셨습니다." % (new_count ))
+        print("축하합니다. %s번만에 세 숫자의 값과 위치를 모두 맞추셨습니다." % (new_count))
         break

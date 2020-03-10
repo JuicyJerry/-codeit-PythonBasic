@@ -17,14 +17,18 @@ dic.close()
 while True:
     # 영어 단어 입력
     English= input("영어 단어를 입력하세요: ")
+
     # q 입력 시 끝
     if English == "q":
         break
+
     # 한국어 단어 입력
     Korean= input("영어 단어를 입력하세요: ")
+
     # q 입력 시 끝
     if Korean == "q":
         break
+
     dic.write("%s: %s\n" % (English, Korean))
 
 
